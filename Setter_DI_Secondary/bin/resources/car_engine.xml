@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- We can also use this combines xml file instead of 2 files -->
+
+<beans>
+<bean id ="c" class="beans.Car">
+<property name="carName" value="Audi"></property>
+<property name="engine">
+<bean class="beans.Engine">
+<property name="modelYear" value="2012">
+</property>
+</bean>
+</property></bean>
+</beans>
