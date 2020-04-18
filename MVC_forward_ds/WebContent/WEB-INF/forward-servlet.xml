@@ -1,0 +1,13 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+<beans>
+<bean name="/hello.ds" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"></bean>
+<bean name="/hai.ds" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"></bean>
+
+<!-- view resolver -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/"></property>
+<property name="suffix" value=".jsp"></property>
+</bean>
+</beans>
